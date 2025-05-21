@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #313131;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: #ffffff;
+    margin-top: 100px;
+    margin-left: 100px;
+
+    /* transform: translateY(400px);*/ /* MOVES THE OBJECT IN Y DIRECTION */
+    /* transform: scale(2); */ /* MAKE IT TWICE THE BIGGER SIZE */
+    /* transform: rotate(45deg); */ /* ROATATE 45DEG CLOCKWISE */
+    /* transform: skew(50deg); */ /* MAKE IT TRAPEZOID IN SHAPE */
+
+    transition: transform 0.5s ease-in-out, background-color 1s linear,
+    scale 0.4s ease-in;
+}
+
+.box:hover {
+    transform: rotate(135deg);
+    background-color: cyan;
+    scale: 1.5;
+}
